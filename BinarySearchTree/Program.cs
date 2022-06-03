@@ -18,7 +18,9 @@ namespace BinarySearchTree
             tree.AddNode(65);
             tree.AddNode(63);
             tree.AddNode(67);
-            
+            Console.WriteLine("Enter node to search:");
+            int element = Convert.ToInt32(Console.ReadLine());
+            tree.search(element, tree);
             tree.Display();
         }
     }
